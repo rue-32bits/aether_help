@@ -1,0 +1,6 @@
+{
+  "name": "AetherOS: Adaptive Cognitive Desktop",
+  "description": "The Adaptive Cognitive Desktop & AI Assistant for Neurodivergent Minds featuring Cognitive Shells, Brown Noise, Reading Ruler, and Synapse AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

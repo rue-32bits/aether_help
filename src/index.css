@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-lexend: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: var(--font-default);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Accessible focus visible outlines */
+*:focus-visible {
+  outline: 2px solid #6366f1 !important;
+  outline-offset: 2px !important;
+}
+
+/* -------------------------------------------------------------
+   Cognitive Shell Theming Classes
+   ------------------------------------------------------------- */
+
+/* Standard Shell */
+.shell-standard {
+  background-color: #0b0f17;
+  color: #f1f5f9;
+}
+
+/* Dyslexia Shell: Soft warm cream parchment background, dark charcoal high-contrast text,
+   enforces Lexend globally, expanded line-height and letter-spacing */
+.shell-dyslexia {
+  background-color: #faf6ee !important;
+  color: #1a202c !important;
+  font-family: var(--font-lexend) !important;
+  letter-spacing: 0.05em !important;
+  line-height: 1.85 !important;
+}
+
+.shell-dyslexia * {
+  font-family: var(--font-lexend) !important;
+}
+
+.shell-dyslexia .shell-card {
+  background-color: #ffffff !important;
+  border-color: #e2d9c8 !important;
+  color: #1a202c !important;
+  box-shadow: 0 4px 12px rgba(92, 77, 49, 0.08) !important;
+}
+
+.shell-dyslexia .shell-header {
+  background-color: #f3ece0 !important;
+  border-color: #ded3bf !important;
+  color: #1a202c !important;
+}
+
+.shell-dyslexia .shell-subtext {
+  color: #3d495c !important;
+}
+
+/* ADHD Shell: Deep muted navy with electric amber and emerald dopamine accents,
+   high contrast structure */
+.shell-adhd {
+  background-color: #0d1117;
+  color: #f0f6fc;
+}
+
+.shell-adhd .shell-card {
+  background-color: #161b22;
+  border-color: #30363d;
+}
+
+.shell-adhd .shell-header {
+  background-color: #0d1117;
+  border-color: #30363d;
+}
+
+/* Autism & Sensory Ease Shell: Ultra-low sensory load, muted sage/slate (#1E232A),
+   low glare, smooth low-contrast text, zero flashing */
+.shell-autism {
+  background-color: #1e232a;
+  color: #cbd5e1;
+}
+
+.shell-autism .shell-card {
+  background-color: #242b35;
+  border-color: #333d4b;
+  box-shadow: none !important;
+}
+
+.shell-autism .shell-header {
+  background-color: #1a1f26;
+  border-color: #333d4b;
+}
+
+.shell-autism * {
+  transition: background-color 0.15s ease-out, color 0.15s ease-out !important;
+  animation: none !important;
+}
+
+/* Bionic reading styling */
+.bionic-word strong {
+  font-weight: 700;
+  color: inherit;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.08);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 140, 140, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 140, 140, 0.5);
+}
+
+/* Subtle focus animations for ADHD and Standard modes */
+@keyframes softPulse {
+  0%, 100% {
+    opacity: 0.95;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.015);
+  }
+}
+
+.focus-pulse {
+  animation: softPulse 3s ease-in-out infinite;
+}
+

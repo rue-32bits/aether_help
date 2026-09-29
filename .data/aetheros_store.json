@@ -1,0 +1,137 @@
+{
+  "users": [
+    {
+      "id": "b73d82a1-6a23-4929-9e8c-5120fa288810",
+      "email": "alex@aetheros.dev",
+      "password_hash": "$2b$10$TM1O2.yr8m5nyg9nEGBNZ.hcpE6AxJrGeXWaGrqypknyae.xH.oB6",
+      "full_name": "Alex Vance",
+      "created_at": "2026-09-29T08:27:21.264Z",
+      "updated_at": "2026-09-29T08:27:21.265Z"
+    }
+  ],
+  "user_preferences": [
+    {
+      "id": "f2dc9d69-2a42-4e11-8d83-681af2d44422",
+      "user_id": "b73d82a1-6a23-4929-9e8c-5120fa288810",
+      "active_shell": "standard",
+      "font_family": "default",
+      "font_size": "base",
+      "tint_overlay_enabled": false,
+      "tint_color": "#FAF6EE",
+      "bionic_reading_enabled": false,
+      "reading_ruler_enabled": false,
+      "brown_noise_volume": 0.2,
+      "updated_at": "2026-09-29T08:27:21.265Z"
+    }
+  ],
+  "task_dechunks": [
+    {
+      "id": "97954ca6-a47b-4e05-915a-cad70f47cd34",
+      "user_id": "b73d82a1-6a23-4929-9e8c-5120fa288810",
+      "original_goal": "Clean my cluttered desk and organize mail",
+      "kickoff_message": "Starting is 90% of the cognitive resistance. You only need to do Step 1 right now—it takes less than 2 minutes.",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Create physical or digital workspace setup",
+          "estimatedMinutes": 2,
+          "actionTip": "Clear 1 square foot on your desk or close all browser tabs except one.",
+          "completed": false
+        },
+        {
+          "step": 2,
+          "title": "Write down the exact 3 files or items you need",
+          "estimatedMinutes": 3,
+          "actionTip": "Don't open them yet; simply name them on a blank sticky note.",
+          "completed": false
+        },
+        {
+          "step": 3,
+          "title": "Complete the initial 5-minute draft or action",
+          "estimatedMinutes": 5,
+          "actionTip": "Set a 5-minute timer. When it rings, you have full permission to pause or keep going.",
+          "completed": false
+        },
+        {
+          "step": 4,
+          "title": "Quick milestone checkpoint",
+          "estimatedMinutes": 2,
+          "actionTip": "Drink water, check off the progress bar, and claim your dopamine reward.",
+          "completed": false
+        }
+      ],
+      "is_completed": false,
+      "created_at": "2026-09-29T08:27:36.723Z"
+    },
+    {
+      "id": "003d1f96-45b7-4790-8afc-764facb7ab37",
+      "user_id": "b73d82a1-6a23-4929-9e8c-5120fa288810",
+      "original_goal": "File federal and state taxes before the deadline",
+      "kickoff_message": "Tax paperwork triggers executive overwhelm. We will only spend 3 minutes gathering what is already in your inbox.",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Open your email search and type \"W2\" or \"1099\"",
+          "estimatedMinutes": 2,
+          "actionTip": "Do not look at the numbers yet—just download the PDF attachments to a folder on your desktop.",
+          "completed": true
+        },
+        {
+          "step": 2,
+          "title": "Create one folder named \"Taxes 2026\" on your desktop",
+          "estimatedMinutes": 2,
+          "actionTip": "Move the downloaded PDFs in there so everything is visually in one place.",
+          "completed": true
+        },
+        {
+          "step": 3,
+          "title": "Log in to tax portal and save your login credentials",
+          "estimatedMinutes": 3,
+          "actionTip": "You do not have to fill anything in yet. Just make sure your password works.",
+          "completed": false
+        },
+        {
+          "step": 4,
+          "title": "Upload the 1 main W2 document and stop",
+          "estimatedMinutes": 5,
+          "actionTip": "Let the portal auto-fill the boxes. Take a high-five break right after.",
+          "completed": false
+        }
+      ],
+      "is_completed": false,
+      "created_at": "2026-09-29T08:27:21.265Z"
+    }
+  ],
+  "number_clarifications": [
+    {
+      "id": "53709523-d0e3-454e-ba43-da93213ad105",
+      "user_id": "b73d82a1-6a23-4929-9e8c-5120fa288810",
+      "raw_input": "The city council allocated $142,500,000 for storm drain upgrades over 10 years.",
+      "chunked_form": "$ 142 , 500 , 000  ( 142.5 Million Dollars )",
+      "plain_scale": "About $14.25 million per year, which is roughly $39 per resident annually for a city of 360,000 people.",
+      "relative_takeaway": "This is an infrastructure maintenance budget averaging less than a monthly streaming subscription per resident.",
+      "created_at": "2026-09-29T08:27:21.265Z"
+    }
+  ],
+  "tone_decodings": [
+    {
+      "id": "f1e62a51-c1cf-45ed-a959-7ea0440b9c27",
+      "user_id": "b73d82a1-6a23-4929-9e8c-5120fa288810",
+      "raw_message": "Per my previous email, let me know when you have time to look over the revised slide deck. We need this wrapped up sooner rather than later.",
+      "literal_meaning": "Please check the revised slide deck as soon as your schedule permits and confirm when you will complete it.",
+      "detected_tone": "Frustrated / Urgent (Passive-Aggressive phrasing)",
+      "subtext_analysis": "\"Per my previous email\" signals impatience that an earlier request was unread or unacknowledged. \"Sooner rather than later\" means they are feeling deadline pressure or anxiety from superiors.",
+      "suggested_replies": [
+        {
+          "type": "Polite & Direct",
+          "text": "Thanks for following up. I am reviewing the revised deck now and will send my final notes by 3:00 PM today."
+        },
+        {
+          "type": "Professional Boundary",
+          "text": "I received the deck. I am currently finalizing the Q2 report, but I have slotted 45 minutes at 2:00 PM to review your slides and provide feedback."
+        }
+      ],
+      "created_at": "2026-09-29T08:27:21.265Z"
+    }
+  ]
+}
